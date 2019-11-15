@@ -25,10 +25,10 @@ document.getElementById('btn').addEventListener('mousedown', function(e){
                     document.getElementById('result').value = list;
                 }
 
-                if (inpN.value[0] !== inpF.value[0]){
+              if (inpN.value.length > 0 && inpN.value[0] !== inpF.value[0]){
                     list.push(nickname[0] + lastName + "@" + companyURL);
                 }
-
+                 
                 if (inpN.value.length > 0 && inpM.value.length > 0){
                     list.push(nickname + middleIn + lastName + "@" + companyURL, nickname + middleIn + lastName[0] + "@" + companyURL)
                     if (inpN.value[0] !== inpF.value[0]){
